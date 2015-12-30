@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QPushButton, QLineEdit, QFileDialog
-from help_function import get_transactions, calculate_cost_2, legend
+from main import get_transactions, calculate_cost, plot
 
 
 class UI(QWidget):
@@ -34,8 +34,8 @@ class UI(QWidget):
         sender = self.sender()
         file_name = self.file_address.text()
         transactions = get_transactions(file_name)
-        data = calculate_cost_2(transactions)
-        legend(data)
+        data = calculate_cost(transactions)
+        plot(data)
 
 
 if __name__ == "__main__":

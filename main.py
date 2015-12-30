@@ -28,9 +28,7 @@ def get_transactions(file_name):
     transactions = []
     # 第一行是列名，最后一行是合计
     for row_num in range(worksheet.nrows-2):
-        # print(worksheet.cell_value(row_num+1, 2))
         year, month, day = worksheet.cell_value(row_num+1, 2).split('-')
-        # year, month, day, hour, minute, second = xlrd.xldate_as_tuple(worksheet.cell_value(row_num+1, 2), 0)
         qty = worksheet.cell_value(row_num+1, 14) if worksheet.cell_value(row_num+1, 12) == '买入' else -1 * worksheet.cell_value(row_num+1, 14)
         transactions.append((1, date(int(year), int(month), int(day)), qty, worksheet.cell_value(row_num+1, 15)))
     return transactions
@@ -42,7 +40,6 @@ def calculate_cost(transactions, stock_qty=0, stock_price=0, trade_date=None, en
         trade_date = data_format_conversion(transactions[0][1])
     if not end_date:
         end_date = data_format_conversion(transactions[-1][1])
-    print("the date is", trade_date, end_date)
     if trade_date>end_date:
         return value
     else:
@@ -66,64 +63,63 @@ def calculate_cost(transactions, stock_qty=0, stock_price=0, trade_date=None, en
             # 浮盈是（当日交易均价 - 当日库存成本）* 库存股数量
             stock_profit = (trade_average_price - stock_price) * stock_qty
             value.append((trade_date, stock_qty, stock_price, stock_profit, trade_profit))
-            print(value)
         trade_date += timedelta(days=1)
         return calculate_cost(transactions, stock_qty, stock_price, trade_date, end_date, value, trade_profit)
 
-
-class Stock:
-    def __init__(self, transactions, stock_qty=0, stock_cost=0):
-        self.transactions = transactions
-        self.stock_qty = stock_qty
-        self.stock_cost = stock_cost
-        self.trade_date = data_format_conversion(transactions[0][1])
-        self.end_date = data_format_conversion(transactions[-1][1])
-        self.stock_profit = 0
-        self.trade_profit = 0
-        self.info = []
-
-    def trade_transactions(self, trade_date):
-        return list(filter(lambda x: data_format_conversion(x[1]) == trade_date, self.transactions))
-
-    def calculation(self):
-        print(self.trade_date, self.end_date)
-        if self.trade_date > self.end_date:
-            return self.info
-        else:
-            all_data = self.trade_transactions(self.trade_date)
-            if all_data:
-                # 如果当日有交易，则计算各项财务指标，否则直接跳过
-                buy_data = list(filter(lambda x: x[2] > 0, all_data))
-                sell_data = list(filter(lambda x: x[2] < 0, all_data))
-                stock_value = self.stock_qty * self.stock_cost
-                # 当日交易损益和累计交易损益,计算交易损益要使用上一个交易日的库存成本价，所以先计算
-                self.trade_profit += sum([(element[3] - self.stock_cost) * abs(element[2]) for element in sell_data])
-                # 库存股数量
-                self.stock_qty += sum([element[2] for element in all_data])
-                # 库存金额是 买入数量*买入单价 + 卖出数量 * 前一个交易日的成本价， 注意卖出数量是负值；
-                stock_value += sum([element[2]*element[3] for element in buy_data]) + sum([element[2]*self.stock_cost for element in sell_data])
-                # 库存成本是 库存金额/库存股数量 ，取8位小数
-                stock_price = 0 if self.stock_qty ==0 else round(stock_value / self.stock_qty, 8)
-                # 当日交易均价
-                trade_average_price = sum([abs(element[2]*element[3]) for element in all_data]) / sum([abs(element[2]) for element in all_data])
-                # 浮盈是（当日交易均价 - 当日库存成本）* 库存股数量
-                stock_profit = (trade_average_price - stock_price) * self.stock_qty
-            self.info.append((self.trade_date, self.stock_qty, self.stock_cost, self.stock_profit, self.trade_profit))
-            self.trade_date += timedelta(days=1)
-            return self.calculation()
-        print(self.info)
-
-    def get_stock_cost(self):
-        return [element[2] for element in self.info]
-
-    def get_stock_qty(self):
-        return [element[2] for element in self.info]
-
-    def get_trade_profit(self):
-        return [element[4] for element in self.info]
-
-    def get_stock_profit(self):
-        return [element[3] for element in self.info]
+#
+# class Stock:
+#     def __init__(self, transactions, stock_qty=0, stock_cost=0):
+#         self.transactions = transactions
+#         self.stock_qty = stock_qty
+#         self.stock_cost = stock_cost
+#         self.trade_date = data_format_conversion(transactions[0][1])
+#         self.end_date = data_format_conversion(transactions[-1][1])
+#         self.stock_profit = 0
+#         self.trade_profit = 0
+#         self.info = []
+#
+#     def trade_transactions(self, trade_date):
+#         return list(filter(lambda x: data_format_conversion(x[1]) == trade_date, self.transactions))
+#
+#     def calculation(self):
+#         print(self.trade_date, self.end_date)
+#         if self.trade_date > self.end_date:
+#             return self.info
+#         else:
+#             all_data = self.trade_transactions(self.trade_date)
+#             if all_data:
+#                 # 如果当日有交易，则计算各项财务指标，否则直接跳过
+#                 buy_data = list(filter(lambda x: x[2] > 0, all_data))
+#                 sell_data = list(filter(lambda x: x[2] < 0, all_data))
+#                 stock_value = self.stock_qty * self.stock_cost
+#                 # 当日交易损益和累计交易损益,计算交易损益要使用上一个交易日的库存成本价，所以先计算
+#                 self.trade_profit += sum([(element[3] - self.stock_cost) * abs(element[2]) for element in sell_data])
+#                 # 库存股数量
+#                 self.stock_qty += sum([element[2] for element in all_data])
+#                 # 库存金额是 买入数量*买入单价 + 卖出数量 * 前一个交易日的成本价， 注意卖出数量是负值；
+#                 stock_value += sum([element[2]*element[3] for element in buy_data]) + sum([element[2]*self.stock_cost for element in sell_data])
+#                 # 库存成本是 库存金额/库存股数量 ，取8位小数
+#                 stock_price = 0 if self.stock_qty ==0 else round(stock_value / self.stock_qty, 8)
+#                 # 当日交易均价
+#                 trade_average_price = sum([abs(element[2]*element[3]) for element in all_data]) / sum([abs(element[2]) for element in all_data])
+#                 # 浮盈是（当日交易均价 - 当日库存成本）* 库存股数量
+#                 stock_profit = (trade_average_price - stock_price) * self.stock_qty
+#             self.info.append((self.trade_date, self.stock_qty, self.stock_cost, self.stock_profit, self.trade_profit))
+#             self.trade_date += timedelta(days=1)
+#             return self.calculation()
+#         print(self.info)
+#
+#     def get_stock_cost(self):
+#         return [element[2] for element in self.info]
+#
+#     def get_stock_qty(self):
+#         return [element[2] for element in self.info]
+#
+#     def get_trade_profit(self):
+#         return [element[4] for element in self.info]
+#
+#     def get_stock_profit(self):
+#         return [element[3] for element in self.info]
 
 
 def plot(data):
@@ -142,7 +138,7 @@ def plot(data):
 
 
 if __name__ == '__main__':
-    trans = get_transactions('data.xls')
+    trans = get_transactions('sample_data.xls')
     trade = calculate_cost(trans)
     plot(trade)
 #     stock_1 = Stock(trans)
