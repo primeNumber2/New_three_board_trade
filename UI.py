@@ -19,7 +19,7 @@ class UI(QWidget):
         grid.addWidget(btn_cost, 1, 0)
 
         btn_choose.clicked.connect(self.show_dialog)
-        btn_cost.clicked.connect(self.show_plot)
+        btn_cost.clicked.connect(self.show_plot, 1)
 
         self.setGeometry(300, 300, 300, 200)
         self.setWindowTitle('Main')
@@ -30,12 +30,12 @@ class UI(QWidget):
         if name[0]:
             self.file_address.setText(str(name[0]))
 
-    def show_plot(self):
-        sender = self.sender()
+    def show_plot(self, num):
+        # sender = self.sender()
         file_name = self.file_address.text()
         transactions = get_transactions(file_name)
         data = calculate_cost(transactions)
-        plot(data)
+        plot(data, num)
 
 
 if __name__ == "__main__":
