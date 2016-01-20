@@ -1,115 +1,94 @@
-# 浮盈的权重和损益的权重是一样；“落袋为安”没有被优先考虑；
-# 市场平均交易价格被替换成交易者的平均交易价格，因为市场交易价格只有在一天结束之后才能获得，无法实时获得；
+# 逻辑简述：新三板市场中，由于单个做市商交易量占总交易的权重很大，所以做市商交易本身会很大的影响市场交易均价；
+# 所以做市商市场交易带来两方面的影响，一是影响库存股浮盈，二是直接带来交易的损益（买卖价差导致赚钱或者亏损）
+# 当市场价格处在上涨过程中，买卖交易提高了市场平均交易均价，带来了正的库存股浮盈，因此，即使高买低卖，也可能带来总收益（库存股浮盈+交易损益）的增加；
+# 而当市场处在下跌过程中，买卖交易降低了市场平均交易均价，造成了库存股浮盈的减少，因此，即使低卖高买，也可能导致总收益（库存股浮盈+交易损益）的减少；
+# 本页脚本通过模拟买卖价格，得到不通买卖价格下，对库存股浮盈和交易损益的影响
+
+# 输入数据："是否本人交易"（默认为1，表示本人交易），“交易日期”（默认历史数据的最后一天）, 交易数量（默认最近一个交易日的交易数量），交易单价（规则如下）
+# 模拟时改变交易单价，建立6组数据集合；在每组数据集合内，卖出价格不变，买入价格从卖出价格的95%逐渐增加到105%，每次浮动1分钱；
+# 6组数据集合，有6个不同的卖出价格，分别为上一个交易日的收盘价，上下浮动+1%, +2%, 3%，-1%, -2%，-3%；
+# 最终6组数据集合，形成6张图，每张图的横坐标是买入价格，纵坐标是 库存浮盈 + 交易损益
 
 
-# 第一个函数计算历史数据；
-#   输入为每一次的交易数据，包含信息为“交易日期”，“买入价格”，“买入数量”
-#   返回  历史买入金额和历史买入数量；后续用于计算库存成本；
-#   返回  当日交易金额和当日交易数量；后续用于计算当日均价；注意：买和卖都要取绝对值，不可以正负抵消
-#   返回  库存股数量；后续用于计算浮盈和新库存股
-
-# 第二个函数计算一次交易（含一买一卖）
-#   输入为第一个函数的返回，卖出价格，卖出数量，买入价格，买入数量，市场交易均价（如果为空，则由第一个函数的返回值 当日交易金额和当日交易数量，加上输入的本次交易，计算获得）
-#   返回 损益、浮盈
-
-# 第三个函数是一个模拟系统，模拟不同的价差带来 损益和浮盈的 影响； 价差以0.01元为步长，共计
-#   输入为卖出数量，卖出价格，买入数量（默认和卖出数量一致）；单次价差，价差数量（如果输入0.01和100，则会模拟价差从0.01到1元的情况）
-#   返回一个数列，数列由tuple组成，每个tuple包含了(价差数量，损益，浮盈， 损益+浮盈）
-
-# 第四个函数是作图函数
-#   根据第三个珊瑚的返回值，每个元素建立数组，价差数量为横坐标；损益、浮盈和损益+浮盈为纵坐标
+from calculate_hist import get_transactions, calculate_cost
+import numpy
 import matplotlib.pyplot as plt
-from datetime import date
-import xlrd
-import tkinter
-from tkinter import filedialog
 
 
+FILE_NAME = 'sample_data.xls'
+HISTORICAL_TRANSACTIONS = get_transactions(FILE_NAME)
+HISTORICAL_VALUE = calculate_cost(HISTORICAL_TRANSACTIONS)
 
-# TRANSACTIONS = [('2015/11/09', 50, 50000), ('2015/11/09', 5, 300), ('2015/11/09', 11, -200), ('2015/11/10', 9, 500), ('2015/11/10', 8, -100)]*100
-
-
-def choose_file():
-    """
-    让用户选择要导入的文件，并返回文件的绝对路径
-    :return: 导入的Excel文件绝对地址 filename
-    """
-    root = tkinter.Tk()
-    root.withdraw()
-    file_name = filedialog.askopenfilename()
-    workbook = xlrd.open_workbook(file_name)
-    worksheet = workbook.sheet_by_index(0)
-    transactions = []
-    for row_num in range(worksheet.nrows-1):
-        year, month, day, hour, minute, second = xlrd.xldate_as_tuple(worksheet.cell_value(row_num+1, 0), 0)
-        transactions.append((date(year, month, day), worksheet.cell_value(row_num+1, 1), worksheet.cell_value(row_num+1, 2)))
-    return transactions
+SELLING_PRICE_RATE = 0.03
+SUBPLOTS = 6
+PRICE_DIFF = 0.01
+BUYING_PRICE_LIMIT = 0.05
 
 
-def trade_history(trans):
-    # 注意传入参数的分隔符和函数strftime的分割符务必一致
-    # 返回买入金额，买入数量，交易金额，交易数量和库存数量
-    today_data = list(filter(lambda x: x[0] == date.today().strftime('%Y/%m/%d'), trans))
-    buy_data = list(filter(lambda x: x[2] > 0, trans))
-    buy_amount_l = []
-    buy_qty_l = []
-    today_amount_l = []
-    today_qty_l = []
-    for index in range(len(buy_data)):
-        buy_amount_l.append(buy_data[index][1] * buy_data[index][2])
-        buy_qty_l.append(buy_data[index][2])
-    for index in range(len(today_data)):
-        today_amount_l.append(abs(today_data[index][1] * today_data[index][2]))
-        today_qty_l.append(abs(today_data[index][2]))
-    stock_qty_l = [element[2] for element in trans]
-    print(today_qty_l, stock_qty_l)
-    return sum(buy_amount_l), sum(buy_qty_l), sum(today_amount_l), sum(today_qty_l), sum(stock_qty_l)
+# 建立一个数组，这个数组由SUBPLOTS个数组构成，每个子数组包含多组tuple数据，每个tuple含有2个元素，分别表示买入价格和卖出价格
+def get_simulation_data(historical_value):
+    closing_price = historical_value[-1][5]
+    # 下面模拟6(SUBPLOTS)种卖出价格，分别为 前一个交易日的收盘价 上下浮动 一定的比率，目前设置为上下浮动最大值为3%，分为6种情况；即分别为±1%.±2%,±3%
+    selling_price_coll = numpy.linspace(closing_price*(1-SELLING_PRICE_RATE),
+                                        closing_price*(1+SELLING_PRICE_RATE), SUBPLOTS)
+    # 针对每一种卖出价格，计算相应的买入价格，买入价格从卖出价格的95%逐渐增加到105%，每次浮动1分钱
+    trade = [[]]
+    for dummy_i in range(SUBPLOTS - 1):
+        trade += [[]]
+    for index in range(SUBPLOTS):
+        buying_price_coll = numpy.arange(selling_price_coll[index]*(1-BUYING_PRICE_LIMIT), selling_price_coll[index]*(1+BUYING_PRICE_LIMIT), 0.01)
+        for buying_price in buying_price_coll:
+            trade[index].append((buying_price, selling_price_coll[index]))
+    return trade
+
+# 模拟时现将截止上一个交易日的各项数据返回并保存，然后加上模拟交易数据计算各项指标（库存成本，库存浮盈的变化，交易损益，已经库存浮盈的变化 + 交易损益）
+# 截止上一个交易日的数据包括 是否为本人交易、交易日期、交易数量、交易单价；
 
 
-def trade_strategy(history, sell_price, sell_qty, buy_price, buy_qty, average_price=None):
-    # 根据历史数据，当前的交易价格和交易数量，得到交易损益、浮盈变化 和 总收益
-    history_buy_amount, history_buy_qty, today_amount, today_qty, stock_qty = \
-        history[0], history[1], history[2], history[3], history[4]
-    # print(buy_qty, buy_price, sell_price, sell_qty, today_qty, today_amount)
-    if average_price:
-        today_price = average_price
-    else:
-        today_price = (today_amount + buy_qty * buy_price + abs(sell_price * sell_qty)) / (today_qty + buy_qty + abs(sell_qty))
-    stock_cost_before = history_buy_amount * 1.0 / history_buy_qty
-    stock_cost_current = (history_buy_amount * 1.0 + buy_qty * buy_price) / (history_buy_qty + buy_qty)
-    # 计算之前的浮盈，使用当前的交易均价，而没有采用截止昨天的交易均价，是因为即使没有进行买卖，市场价格仍然在变化，/
-    #   这部分浮盈的变化并不是由于交易员的操作所引起的;
-    # 如果交易员对单支股票的操作影响超过了50%，则此处会产生较大的误差；
-    stock_profit_before = (today_price - stock_cost_before) * stock_qty
-    stock_profit_current = (today_price - stock_cost_current) * (stock_qty + buy_qty - abs(sell_qty))
-    trade_profit = (sell_price - stock_cost_current) * abs(sell_qty)
-    return trade_profit, stock_profit_current - stock_profit_before, trade_profit + stock_profit_current - stock_profit_before
+def calculate_profit(buying_price, selling_price, if_self=1, trade_date=None, trade_qty=0):
+    # 根据输入的买入价格及卖出价格，计算 库存浮盈的变动 + 交易损益
+    # 首先根据历史数据，返回截至目前为止的交易数据
+    if not trade_date:
+        trade_date = HISTORICAL_VALUE[-1][0]
+    if not trade_qty:
+        days = -1
+        while HISTORICAL_VALUE[days][1] - HISTORICAL_VALUE[days-1][1] == 0:
+            days += 1
+        trade_qty = abs(HISTORICAL_VALUE[days][1] - HISTORICAL_VALUE[days-1][1])
+    # 增加交易数据，是否为本人交易、交易日期、交易数量、交易单价(买入价和卖出价)，得到新的transactions
+    transactions = HISTORICAL_TRANSACTIONS + [(if_self, trade_date, trade_qty, buying_price)] \
+                   + [(if_self, trade_date, -trade_qty, selling_price)]
+    # 将transactions, stock_qty, stock_price, trade_date, end_date, value, trade_profit, stock_profit, closing_price
+    #   参数传入calculate_cost函数，计算得到新的数据
+    # 将交易日期、库存股数量、库存股成本、库存股浮盈、累计交易损益、每日收盘价 加入数组；
+    stock_qty = HISTORICAL_VALUE[-2][1]
+    stock_price = HISTORICAL_VALUE[-2][2]
+    end_date = trade_date
+    value = HISTORICAL_VALUE
+    trade_profit = HISTORICAL_VALUE[-2][3]
+    stock_profit = HISTORICAL_VALUE[-2][4]
+    closing_price = HISTORICAL_VALUE[-2][5]
+    new_value = calculate_cost(transactions, stock_qty, stock_price, trade_date, end_date, value[:-1],
+                               trade_profit, stock_profit, closing_price)
+    #交易后的 库存浮盈加累计损益 减去 交易前的 库存浮盈加累计损益 ，就是我们要得到的值
+    simulation_profit = new_value[-1][3] + new_value[-1][4] - HISTORICAL_VALUE[-1][3] - HISTORICAL_VALUE[-1][4]
+    return simulation_profit
 
 
-def trade_simulate(sell_price, sell_qty, buy_qty, price_diff,  nums):
-    # 模拟交易
-    history_info = trade_history(choose_file())
-    # history_info = choose_file()
-    trades = [(sell_price, sell_qty, sell_price-price_diff*(num+1), buy_qty) for num in range(nums)]
-    simulate_result = []
-    for num in range(len(trades)):
-        simulate_result.append(trade_strategy(history_info, trades[num][0], trades[num][1],trades[num][2],trades[num][3]))
-    return simulate_result
+if __name__ == "__main__":
+    simulation_trades = get_simulation_data(HISTORICAL_VALUE)
 
-
-def plot(info):
-    x_val = range(len(info))
-    y_trade_profit = [value[0] for value in info]
-    y_stock_profit = [value[1] for value in info]
-    y_total_profit = [value[2] for value in info]
-    plt.plot(x_val, y_total_profit, label="total profit")
-    # plt.plot(x_val, y_trade_profit, label="trade profit")
-    # plt.plot(x_val, y_stock_profit, label="stock profit")
-    plt.legend(loc="upper left")
+    def plot(index):
+        trades = simulation_trades[index]
+        return_value = []
+        for each_trade in trades:
+            profit = calculate_profit(each_trade[0], each_trade[1], trade_qty=1000)
+            return_value.append((each_trade[0], each_trade[1], profit))
+        buy_val = [element[0] for element in return_value]
+        profit_val = [element[2] for element in return_value]
+        sell_val = return_value[0][1]
+        plt.plot(buy_val, profit_val, label="sell price is %s" % sell_val)
+        plt.legend(loc=0)
+    for index in range(SUBPLOTS):
+        plot(index)
     plt.show()
-
-
-trade_trans = trade_simulate(4.55, 50000, 5000, 0.01, 100)
-plot(trade_trans)
-
-

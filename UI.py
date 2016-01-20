@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QPushButton, QLineEdit, QFileDialog
-from main import get_transactions, calculate_cost, plot
+from calculate_hist import get_transactions, calculate_cost, plot
 
 
 class UI(QWidget):

@@ -1,8 +1,6 @@
 # 首先将数据转化成后续处理的格式，日期：数量；价格； 数量>0时表示买入，数量<0时表示卖出
 from datetime import date, timedelta
 import re
-import tkinter
-from tkinter import filedialog
 import xlrd
 import matplotlib.pyplot as plt
 
@@ -35,14 +33,14 @@ def get_transactions(file_name):
     return transactions
 
 
-def calculate_cost(transactions, stock_qty=0, stock_price=0, trade_date=None, end_date=None, value=[], trade_profit=0, stock_profit=0, trade_average_price=None):
+def calculate_cost(transactions, stock_qty=0, stock_price=0, trade_date=None, end_date=None, value=[], trade_profit=0, stock_profit=0, closing_price=0):
     # 根据交易记录计算库存成本,库存股数量,计算方法使用递归，逐日计算成本，用前一个交易日的数据计算下一个交易日的数据
     # trade_date是交易日期，在第一次计算时，使用导入数据的第一个日期作为初始计算日期，后续递归计算时，传入交易日期；
     # end_date是截止日期，如果没有指定，使用导入数据的最后一个日期；
     # 如果交易日期大于截止日期，返回计算结果，否则逐日计算成本；
-    # 返回： 交易日期、截止交易日期的库存股数量，截止交易日期的库存股成本，截止交易日期的库存股浮盈，截止交易日期的累计损益，交易日的市场成交均价
-    if not trade_average_price:
-        trade_average_price = transactions[0][3]
+    # 返回： 交易日期、截止交易日期的库存股数量，截止交易日期的库存股成本，截止交易日期的库存股浮盈，截止交易日期的累计损益，交易日的收盘价
+    # if not closing_price:
+    #     closing_price = transactions[0][3]
     if not trade_date:
         trade_date = data_format_conversion(transactions[0][1])
     if not end_date:
@@ -74,12 +72,14 @@ def calculate_cost(transactions, stock_qty=0, stock_price=0, trade_date=None, en
             trade_average_price = sum([abs(element[2]*element[3]) for element in all_data]) / sum([abs(element[2]) for element in all_data])
             # 浮盈是 前一个交易日的浮盈 +（当日交易均价 - 当日库存成本）* 库存股数量
             stock_profit += (trade_average_price - stock_price) * stock_qty
-        # 将交易日期、库存股数量、库存股成本、库存股浮盈、累计交易损益、市场交易均价 加入数组；
+            # 统计收盘价
+            closing_price = all_data[-1][3]
+        # 将交易日期、库存股数量、库存股成本、库存股浮盈、累计交易损益、每日收盘价 加入数组；
         # 注意，如果当日没有交易，就将数据带到下一个交易日
-        value.append((trade_date, stock_qty, stock_price, stock_profit, trade_profit, trade_average_price))
+        value.append((trade_date, stock_qty, stock_price, stock_profit, trade_profit, closing_price))
         # 交易日加1天，然后递归计算
         trade_date += timedelta(days=1)
-        return calculate_cost(transactions, stock_qty, stock_price, trade_date, end_date, value, trade_profit, stock_profit, trade_average_price)
+        return calculate_cost(transactions, stock_qty, stock_price, trade_date, end_date, value, trade_profit, stock_profit, closing_price)
 
 
 def plot(data):
