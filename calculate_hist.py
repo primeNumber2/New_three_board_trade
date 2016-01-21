@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # 首先将数据转化成后续处理的格式，日期：数量；价格； 数量>0时表示买入，数量<0时表示卖出
 from datetime import date, timedelta
 import re
@@ -114,6 +115,7 @@ def plot(data):
     plt.plot(trade_price, label="Trade price")
     plt.legend(loc=0)
     plt.show()
+
 
 
 if __name__ == '__main__':
