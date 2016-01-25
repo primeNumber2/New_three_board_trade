@@ -1,273 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fccfd344-8299-4db3-8354-5e9dc0b254e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\AAPL.dat.gz" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\INTC.dat.gz" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\Minduka_Present_Blue_Pack.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\None_vs_nearest-pdf.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\Qt5Core.dll" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\Qt5Gui.dll" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\Qt5Widgets.dll" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXGeneral.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXGeneralBol.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXGeneralBolIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXGeneralItalic.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXNonUni.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXNonUniBol.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXNonUniBolIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXNonUniIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizFiveSymReg.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizFourSymBol.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizFourSymReg.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizOneSymBol.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizOneSymReg.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizThreeSymBol.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizThreeSymReg.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizTwoSymBol.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\STIXSizTwoSymReg.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\UI.exe" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\Vera.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraBI.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraBd.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraIt.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraMoBI.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraMoBd.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraMoIt.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraMono.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraSe.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\VeraSeBd.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\aapl.npy.gz" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\ada.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\back.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\back.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\back.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\back.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\axes_grid\bivariate_normal.npy" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\cmb10.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\cmex10.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\cmmi10.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\cmr10.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\cmss10.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\cmsy10.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\cmtt10.ttf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\ct.raw.gz" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\eeg.dat" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\filesave.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\filesave.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\filesave.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\filesave.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\forward.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\forward.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\forward.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\forward.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\goog.npy" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\grace_hopper.jpg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\grace_hopper.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\hand.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\hand.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\hand.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\hand.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\home.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\home.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\home.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\home.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\icudt53.dll" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\icuin53.dll" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\icuuc53.dll" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\jacksboro_fault_dem.npz" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\libiomp5md.dll" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\library.zip" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\logo2.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\matplotlib.gif" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\matplotlib.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\matplotlib.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\membrane.dat" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\move.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\move.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\move.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\move.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\necked_tensile_specimen.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\python34.dll" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\qt4_editor_options.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\qt4_editor_options.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\s1045.ima.gz" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_close.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_close.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_down.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_down.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_left.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_left.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_refresh.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_refresh.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_right.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_right.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_save_as.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_save_as.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_up.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_up.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_zoom-in.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_zoom-in.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_zoom-out.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\stock_zoom-out.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\subplots.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\subplots.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\subplots.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\subplots.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\zoom_to_rect.pdf" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\zoom_to_rect.png" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\zoom_to_rect.ppm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\zoom_to_rect.xpm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\COPYRIGHT.TXT" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Courier-Bold.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Courier-BoldOblique.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Courier-Oblique.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Courier.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Helvetica-Bold.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Helvetica-BoldOblique.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Helvetica-Oblique.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Helvetica.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\LICENSE_STIX" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\PyQt5.QtCore.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\PyQt5.QtGui.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\PyQt5.QtWidgets.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\README.TXT" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\README.txt" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\ttf\RELEASENOTES.TXT" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Symbol.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Times-Bold.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Times-BoldItalic.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Times-Italic.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\Times-Roman.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\UI.log" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\.idea\dictionaries\WangS15.xml" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\ZapfDingbats.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_bz2.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_ctypes.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_decimal.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_elementtree.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_hashlib.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_lzma.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_multiprocessing.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_socket.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\_ssl.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\aapl.csv" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\back.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\bmh.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\classic.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\cmex10.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\cmmi10.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\cmr10.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\cmsy10.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\cmtt10.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\dark_background.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\data_x_x2_x3.csv" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\demodata.csv" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\embedding_in_wx3.xrc" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\filesave.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\fivethirtyeight.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\forward.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\ggplot.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\grayscale.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\hand.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\home.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib._cntr.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib._contour.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib._image.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib._path.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib._png.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib._qhull.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib._tri.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib.backends._backend_agg.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib.ft2font.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\matplotlib.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\matplotlib.ttconv.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\matplotlibrc" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\move.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\msft.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysetup.py" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.core._dotblas.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.core.multiarray.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.core.scalarmath.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.core.umath.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.fft.fftpack_lite.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.lib._compiled_base.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.linalg._umath_linalg.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.linalg.lapack_lite.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\numpy.random.mtrand.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pagd8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pagdo8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pagk8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pagko8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pbkd8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pbkdi8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pbkl8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pbkli8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pcrb8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pcrbo8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pcrr8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pcrro8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\sample_data\percent_bachelors_degrees_women_usa.csv" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvb8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvb8an.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvbo8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvbo8an.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvl8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvlo8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvr8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvr8an.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvro8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\phvro8an.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pncb8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pncbi8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pncr8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pncri8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pplb8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pplbi8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pplr8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pplri8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\psyr.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\ptmb8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\ptmbi8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\ptmr8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\ptmri8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\putb8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\putbi8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\putr8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\putri8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\pyexpat.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pzcmi8a.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\afm\pzdr.afm" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\qt4_editor_options.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\fonts\pdfcorefonts\readme.txt" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-bright.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-colorblind.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-dark-palette.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-dark.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-darkgrid.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-deep.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-muted.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-notebook.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-paper.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-pastel.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-poster.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-talk.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-ticks.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-white.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\stylelib\seaborn-whitegrid.mplstyle" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\select.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\sip.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\subplots.svg" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\unicodedata.pyd" />
-      <change type="NEW" beforePath="" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\dist\mpl-data\images\zoom_to_rect.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI.py" afterPath="$PROJECT_DIR$/UI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculate_hist.py" afterPath="$PROJECT_DIR$/calculate_hist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulate.py" afterPath="$PROJECT_DIR$/simulate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp.py" afterPath="$PROJECT_DIR$/temp.py" />
-      <change type="MODIFICATION" beforePath="D:\sync\Projects\pycharmProjects\StockProfit\.idea\vcs.xml" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\.idea\vcs.xml" />
-      <change type="MODIFICATION" beforePath="D:\sync\Projects\pycharmProjects\StockProfit\.idea\workspace.xml" afterPath="D:\sync\Projects\pycharmProjects\StockProfit\.idea\workspace.xml" />
-    </list>
+    <list default="true" id="fccfd344-8299-4db3-8354-5e9dc0b254e1" name="Default" comment="" />
     <ignored path="WangZhen.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -292,8 +26,8 @@
       <file leaf-file-name="temp.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="152">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -302,11 +36,9 @@
       <file leaf-file-name="calculate_hist.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calculate_hist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2451">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#72#108#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="1795" max-vertical-offset="2394">
+              <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -314,10 +46,10 @@
       <file leaf-file-name="simulate.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1330">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1472" max-vertical-offset="1843">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
-                <element signature="e#460#525#0" expanded="true" />
+                <element signature="e#444#509#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -326,21 +58,11 @@
       <file leaf-file-name="UI.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7681941" vertical-offset="1311" max-vertical-offset="1710">
-              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.30727762" vertical-offset="171" max-vertical-offset="1938">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
-                <element signature="e#24#34#0" expanded="true" />
+                <element signature="e#70#80#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -383,11 +105,11 @@
         <option value="$PROJECT_DIR$/test_module.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/calculate_hist.py" />
-        <option value="$PROJECT_DIR$/simulate.py" />
-        <option value="$PROJECT_DIR$/temp.py" />
         <option value="$PROJECT_DIR$/mysetup.py" />
         <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/temp.py" />
         <option value="$PROJECT_DIR$/UI.py" />
+        <option value="$PROJECT_DIR$/simulate.py" />
       </list>
     </option>
   </component>
@@ -695,8 +417,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.UI" />
-        <item index="1" class="java.lang.String" itemvalue="Python.temp" />
-        <item index="2" class="java.lang.String" itemvalue="Python.simulate" />
+        <item index="1" class="java.lang.String" itemvalue="Python.simulate" />
+        <item index="2" class="java.lang.String" itemvalue="Python.temp" />
         <item index="3" class="java.lang.String" itemvalue="Python.calculate_hist" />
         <item index="4" class="java.lang.String" itemvalue="Python.main" />
       </list>
@@ -721,17 +443,17 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39693356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32027256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32027256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -774,44 +496,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/simulate.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="32" />
+      <option name="time" value="40" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="152">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calculate_hist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="2432">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-          <folding>
-            <element signature="e#72#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simulate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="2679">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#460#525#0" expanded="true" />
+            <element signature="e#444#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -821,7 +518,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="931">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#70#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -838,9 +535,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="2432">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#72#108#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +544,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1298" max-vertical-offset="2679">
           <caret line="79" column="95" selection-start-line="79" selection-start-column="95" selection-end-line="79" selection-end-column="95" />
           <folding>
-            <element signature="e#460#525#0" expanded="true" />
+            <element signature="e#444#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -858,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="491" max-vertical-offset="817">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="33041">
           <caret line="1732" column="0" selection-start-line="1732" selection-start-column="0" selection-end-line="1733" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,7 +568,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="931">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#70#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -884,7 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="190">
           <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,9 +592,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1881" max-vertical-offset="2413">
           <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#72#108#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +601,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="1881">
           <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
           <folding>
-            <element signature="e#460#525#0" expanded="true" />
+            <element signature="e#444#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -921,7 +611,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="931">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#70#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -930,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,9 +635,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2413">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#72#108#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -957,7 +644,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="329" max-vertical-offset="2793">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#460#525#0" expanded="true" />
+            <element signature="e#444#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -967,7 +654,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="931">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#70#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -976,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,9 +678,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2413">
           <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="e#72#108#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,7 +687,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="2774">
           <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
           <folding>
-            <element signature="e#460#525#0" expanded="true" />
+            <element signature="e#444#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1013,7 +697,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="931">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#70#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1022,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,9 +721,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="2926">
           <caret line="132" column="46" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
-          <folding>
-            <element signature="e#72#108#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +730,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1255" max-vertical-offset="2299">
           <caret line="72" column="51" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
           <folding>
-            <element signature="e#460#525#0" expanded="true" />
+            <element signature="e#444#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1059,7 +740,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="931">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#70#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1068,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,23 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="31493" max-vertical-offset="31806">
           <caret line="1732" column="0" selection-start-line="1732" selection-start-column="0" selection-end-line="1733" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5902965" vertical-offset="446" max-vertical-offset="817">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="152">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1177,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33128834" vertical-offset="7321" max-vertical-offset="8949">
           <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,46 +847,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15363881" vertical-offset="0" max-vertical-offset="371">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calculate_hist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2451">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#72#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1330">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#460#525#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
+        <state vertical-scroll-proportion="0.20485175" vertical-offset="0" max-vertical-offset="371">
           <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculate_hist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1795" max-vertical-offset="2394">
+          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33128834" vertical-offset="5991" max-vertical-offset="21109">
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd_breakpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33128834" vertical-offset="1849" max-vertical-offset="3800">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65030676" vertical-offset="491" max-vertical-offset="817">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1472" max-vertical-offset="1843">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding>
+            <element signature="e#444#509#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7681941" vertical-offset="1311" max-vertical-offset="1710">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.30727762" vertical-offset="171" max-vertical-offset="1938">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#70#80#0" expanded="true" />
           </folding>
         </state>
       </provider>

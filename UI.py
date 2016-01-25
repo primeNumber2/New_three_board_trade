@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
+# 在simulate的基础上增加了UI界面，让用户选择导入的数据文件，并输入各项参数；
+
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QPushButton, QLineEdit, QFileDialog, QLabel
 from calculate_hist import get_transactions, calculate_cost, plot
-from simulate import generate_simulation_data, calculate_profit
+from simulate import generate_simulation_trades, generate_simulation_2, calculate_profit
+
 
 class UI(QWidget):
     def __init__(self):
@@ -17,6 +20,7 @@ class UI(QWidget):
         self.selling_price_diff = QLineEdit("1.0")
         self.buying_price_diff = QLineEdit("0.98")
         self.days = QLineEdit("90")
+        self.target_price = QLineEdit()
 
 
         btn_choose = QPushButton("选择文件", self)
@@ -31,6 +35,8 @@ class UI(QWidget):
         lbl_buying_price.setText("买入价/卖出价 比例")
         lbl_days = QLabel(self)
         lbl_days.setText("策略持续时间")
+        lbl_target_price = QLabel(self)
+        lbl_target_price.setText("目标价格")
 
         grid.addWidget(lbl_stock, 1, 0)
         grid.addWidget(self.stock_ratio, 1, 1)
@@ -40,12 +46,13 @@ class UI(QWidget):
         grid.addWidget(self.buying_price_diff, 3, 1)
         grid.addWidget(lbl_days, 4, 0)
         grid.addWidget(self.days, 4, 1)
+        grid.addWidget(lbl_target_price, 5, 0)
+        grid.addWidget(self.target_price, 5, 1)
+        grid.addWidget(self.file_address, 11, 0)
+        grid.addWidget(btn_choose, 11, 1)
 
-        grid.addWidget(self.file_address, 5, 0)
-        grid.addWidget(btn_choose, 5, 1)
-
-        grid.addWidget(btn_cost, 6, 0)
-        grid.addWidget(btn_simulation, 6, 1)
+        grid.addWidget(btn_cost, 12, 0)
+        grid.addWidget(btn_simulation, 12, 1)
 
 
         btn_choose.clicked.connect(self.show_dialog)
@@ -62,7 +69,6 @@ class UI(QWidget):
             self.file_address.setText(str(name[0]))
 
     def show_plot(self):
-        # sender = self.sender()
         file_name = self.file_address.text()
         transactions = get_transactions(file_name)
         data = calculate_cost(transactions, value=[])
@@ -74,7 +80,13 @@ class UI(QWidget):
         selling_price_diff = float(self.selling_price_diff.text())
         buying_price_diff = float(self.buying_price_diff.text())
         days = int(self.days.text())
-        simulation_tran = generate_simulation_data(file_name=file_name, stock_ratio=stock_ratio,
+
+        if self.target_price.text():
+            target_price = float(self.target_price.text())
+            simulation_tran = generate_simulation_2(file_name=file_name,target_price=target_price,stock_ratio=stock_ratio,
+                                                   buying_price_diff=buying_price_diff, days=days)
+        else:
+            simulation_tran = generate_simulation_trades(file_name=file_name, stock_ratio=stock_ratio,
                                                    selling_price_diff=selling_price_diff,
                                                    buying_price_diff=buying_price_diff, days=days)
         calculate_profit(file_name=file_name, simulation_tran=simulation_tran, ratio=1)
