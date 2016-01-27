@@ -10,10 +10,10 @@ def data_format_conversion(input_date):
     # 将输入的日期，转化为 日期格式；
     # 如果输入的日期类型是字符串，则用正则表达式，把年月日取出来（一定按顺序取出），并转化成datetime.date格式
     # 如果输入的日期类型是datetime.date；则不作处理，返回本身，否则，提示类型错误
-    if type(input_date) is type(''):
+    if isinstance(input_date, str):
         nums = re.split('\D+0?', input_date)
         return date(int(nums[0]), int(nums[1]), int(nums[2]))
-    elif type(input_date) is date:
+    elif isinstance(input_date, date):
         return input_date
     else:
         raise TypeError('The format of date is not correct')
@@ -40,8 +40,6 @@ def calculate_cost(transactions, stock_qty=0, stock_price=0, trade_date=None, en
     # end_date是截止日期，如果没有指定，使用导入数据的最后一个日期；
     # 如果交易日期大于截止日期，返回计算结果，否则逐日计算成本；
     # 返回： 交易日期、截止交易日期的库存股数量，截止交易日期的库存股成本，截止交易日期的库存股浮盈，截止交易日期的累计损益，交易日的收盘价
-    # if not closing_price:
-    #     closing_price = transactions[0][3]
     if not trade_date:
         trade_date = data_format_conversion(transactions[0][1])
     if not end_date:
