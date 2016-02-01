@@ -1,4 +1,3 @@
-from datetime import date
-
-a = date(2015, 10, 10)
-print(isinstance(a, date))
+a = [1, 2, 3, 5, 2]
+a.pop()
+print(a)
