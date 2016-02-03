@@ -16,8 +16,8 @@ from calculate_hist import get_transactions, calculate_cost, plot, get_market_av
 from datetime import timedelta
 import numpy
 
-TRANS_FILE_NAME = 'sample_data.xls'
-MARKET_PRICE_FILE_NAME = '市场成交均价.xlsx'
+TRANS_FILE_NAME = 'hist_trans.xls'
+MARKET_PRICE_FILE_NAME = 'update_market_prices.xlsx'
 
 
 def generate_simulation_data(hist_tran, market_average_prices, target_price, target_qty, stock_ratio,
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     simulation_trans, simulation_market_average_prices = generate_simulation_data(hist_trans, hist_market_average_prices, target_price=5.13, target_qty=886000, stock_ratio=0.01,
                                                    price_diff_ratio=0.98, days=60)
     data1 = calculate_cost(simulation_trans, simulation_market_average_prices, value=[])
-    data2 = calculate_cost(get_transactions('成交回报明细(中科联众).xls'), get_market_average_prices(MARKET_PRICE_FILE_NAME), value=[])
+    data2 = calculate_cost(get_transactions('update_trans.xls'), get_market_average_prices(MARKET_PRICE_FILE_NAME), value=[])
     # print(data1)
     # print(data2)
     plot(*[data1, data2])

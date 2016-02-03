@@ -5,6 +5,10 @@ import re
 import xlrd
 import matplotlib.pyplot as plt
 from pylab import mpl
+import matplotlib
+
+
+
 
 HOLIDAY = [date(2015, 10, 1) + timedelta(days=days) for days in range(7)] + [date(2016, 1, 1) + timedelta(days=days)
                                                                              for days in range(3)] + \
@@ -174,9 +178,9 @@ def plot(*data):
 
 
 if __name__ == '__main__':
-    trans1 = get_transactions('成交回报明细(中科联众).xls')
-    trans2 = get_transactions('sample_data.xls')
-    average_prices = get_market_average_prices('市场成交均价.xlsx')
+    trans1 = get_transactions('update_market_trans.xls')
+    trans2 = get_transactions('hist_trans.xls')
+    average_prices = get_market_average_prices('update_market_prices.xlsx')
     data1 = calculate_cost(transactions=trans1, market_average_prices=average_prices, value=[])
     data2 = calculate_cost(transactions=trans2, market_average_prices=average_prices, value=[])
     plot(data1, data2)

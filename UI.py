@@ -10,7 +10,10 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QPushButton, QLineEdit, QFileDialog, QLabel, QCheckBox
 from calculate_hist import get_transactions, calculate_cost, plot, get_market_average_prices
 from simulate import generate_simulation_data
-
+# import matplotlib.backends.backend_tkagg
+# from PyQt5 import QtCore, QtGui
+# import tkinter, tkinter.filedialog
+# from tkinter import filedialog
 
 class UI(QWidget):
     def __init__(self):
