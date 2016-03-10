@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-# 首先将数据转化成后续处理的格式，日期：数量；价格； 数量>0时表示买入，数量<0时表示卖出
+# 读取交易明细数据（excel格式）和市场交易均价数据（excel格式），计算库存股成本、库存股数量、库存股公允价值和投资收益等；
+# 根据历史数据，用matplotlib绘图，展示各项数据指标；
+
 from datetime import date, timedelta
 import re
 import xlrd
@@ -8,12 +10,22 @@ from pylab import mpl
 import matplotlib
 
 
-
-
+# 新三板市场除了周末外，所有的节假日不交易，此处将交易日单据列出
 HOLIDAY = [date(2015, 10, 1) + timedelta(days=days) for days in range(7)] + [date(2016, 1, 1) + timedelta(days=days)
                                                                              for days in range(3)] + \
           [date(2016, 2, 7) + timedelta(days=days) for days in range(7)] + [date(2016, 4, 2) + timedelta(days=days)
                                                                             for days in range(3)]
+
+
+def stock_calendar(trade_date, days, holiday):
+    # 输入参数为交易日期加上一个天数，如果结果是周末或者节假日，则向后推移直到工作日；
+    # 节假日的规则不确定，所以作为参数传入
+    new_date = trade_date + timedelta(days=days)
+    if new_date.weekday() < 5 and new_date not in holiday:
+        return new_date
+    else:
+        new_date += timedelta(days=1)
+        return stock_calendar(new_date, 1, holiday)
 
 
 def data_format_conversion(input_date):
@@ -62,17 +74,6 @@ def get_market_average_prices(file_name):
         average_price = worksheet.cell_value(row_num + 1, 3)
         market_average_prices[trade_date] = average_price
     return market_average_prices
-
-
-def stock_calendar(trade_date, days, holiday):
-    # 输入参数为交易日期加上一个天数，如果结果是周末或者节假日，则向后推移直到工作日；
-    # 节假日的规则不确定，所以作为参数传入
-    new_date = trade_date + timedelta(days=days)
-    if new_date.weekday() < 5 and new_date not in holiday:
-        return new_date
-    else:
-        new_date += timedelta(days=1)
-        return stock_calendar(new_date, 1, holiday)
 
 
 def calculate_cost(transactions, market_average_prices, stock_qty=0, stock_cost=0, trade_date=None, end_date=None,
@@ -140,7 +141,7 @@ def plot(*data):
     trade_profit_total = [[] for dummy_i in range(len(data))]
     total_profit = [[] for dummy_i in range(len(data))]
     market_average_price = [[] for dummy_i in range(len(data))]
-    label = [[] for dummy_i in range(len(data))]
+    # label = [[] for dummy_i in range(len(data))]
     for num in range(len(data)):
         qty_val[num] = [element[1] for element in data[num]]
         cost_val[num] = [element[2] for element in data[num]]

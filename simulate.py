@@ -1,16 +1,10 @@
 # -*- coding: utf-8 -*-
 
 # 逻辑简述：新三板市场中，由于单个做市商交易量占总交易的权重很大，所以做市商交易本身会很大的影响市场交易均价；
-# 所以做市商市场交易带来两方面的影响，一是影响库存股浮盈，二是直接带来交易的损益（买卖价差导致赚钱或者亏损）
+# 所以做市商市场交易带来两方面的影响，一是影响库存股的公允价值，二是直接带来投资损益
 
-# 本页脚本通过模拟不同的交易策略，得到不同买卖价格下，对库存股浮盈和交易损益的影响
-# 本页脚本列出的策略generate_simulation_trades和generate_simulation_2是两个交易策略
-#   前者假设市场交易价格不变，后者假设市场交易价格均匀变化到给定的价格
 
-# 交易策略的输出即为transactions,格式和函数get_transactions()返回格式相同；
-#   返回格式："是否本人交易"（默认为1，表示本人交易），“交易日期”, 交易数量，交易单价
-
-# calculate_profit根据历史交易记录，加上模拟形成的交易记录，计算各项指标并绘图；
+# 根据历史交易记录，加上模拟形成的交易记录，计算各项指标并绘图；
 
 from calculate_hist import get_transactions, calculate_cost, plot, get_market_average_prices, stock_calendar, HOLIDAY
 from datetime import timedelta
@@ -54,13 +48,14 @@ def generate_simulation_data(hist_tran, market_average_prices, target_price, tar
 
 
 if __name__ == "__main__":
-    # a = generate_simulation_data(FILE_NAME, 0.zx 1, 1, 0.95, 100)
     hist_trans = get_transactions(TRANS_FILE_NAME)
     hist_market_average_prices = get_market_average_prices(MARKET_PRICE_FILE_NAME)
-    simulation_trans, simulation_market_average_prices = generate_simulation_data(hist_trans, hist_market_average_prices, target_price=5.13, target_qty=886000, stock_ratio=0.01,
-                                                   price_diff_ratio=0.98, days=60)
+    simulation_trans, simulation_market_average_prices = generate_simulation_data(hist_trans,
+                                                                                  hist_market_average_prices,
+                                                                                  target_price=5.13, target_qty=886000,
+                                                                                  stock_ratio=0.01,
+                                                                                  price_diff_ratio=0.98, days=60)
     data1 = calculate_cost(simulation_trans, simulation_market_average_prices, value=[])
-    data2 = calculate_cost(get_transactions('update_trans.xls'), get_market_average_prices(MARKET_PRICE_FILE_NAME), value=[])
-    # print(data1)
-    # print(data2)
+    data2 = calculate_cost(get_transactions('update_trans.xls'), get_market_average_prices(MARKET_PRICE_FILE_NAME),
+                           value=[])
     plot(*[data1, data2])

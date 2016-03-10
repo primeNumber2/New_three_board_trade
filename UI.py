@@ -10,10 +10,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QPushButton, QLineEdit, QFileDialog, QLabel, QCheckBox
 from calculate_hist import get_transactions, calculate_cost, plot, get_market_average_prices
 from simulate import generate_simulation_data
-# import matplotlib.backends.backend_tkagg
-# from PyQt5 import QtCore, QtGui
-# import tkinter, tkinter.filedialog
-# from tkinter import filedialog
+
 
 class UI(QWidget):
     def __init__(self):
@@ -90,7 +87,6 @@ class UI(QWidget):
         self.grid.addWidget(self.lbl_num, 14, 1)
         self.grid.addWidget(btn_del_strategy, 14, 2)
         self.grid.addWidget(btn_contrast, 14, 5)
-
 
         btn_save_strategy.clicked.connect(self.update_strategy)
         btn_del_strategy.clicked.connect(self.update_strategy)

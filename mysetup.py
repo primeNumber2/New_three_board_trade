@@ -1,11 +1,3 @@
-# from distutils.core import setup
-# import py2exe
-# from PyQt5 import QtCore, QtGui
-#
-# opts = {'py2exe': {"includes": ["matplotlib.backends.backend_tkagg"]} }
-#
-# setup(windows=[r"D:\sync\Projects\pycharmProjects\StockProfit\UI.py"], options=opts)
-
 import sys
 from cx_Freeze import setup, Executable
 
